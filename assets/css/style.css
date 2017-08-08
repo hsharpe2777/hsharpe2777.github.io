@@ -14,13 +14,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px;
-    height: 800px;
+    max-height: 600px;
     margin-bottom: 80px;
 }
 
-input[type=text], select {
-    width: 600px;
-    padding-top: 20px;
+.subject{
+    width: 300px;
+    padding-top: 15px;
     margin-bottom: -5px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -28,7 +28,37 @@ input[type=text], select {
     box-sizing: border-box;
     margin-left: 30px;
     margin-top: -50px;
+    font-size: 16px;
+    color: darkgrey;
 }
+
+.contact-name{
+    width: 300px;
+    padding-top: 15px;
+    margin-bottom: -5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    margin-top: -50px;
+    font-size: 16px;
+    color: darkgrey;
+}
+
+.comment{
+    width: 600px;
+    padding-top: 15px;
+    margin-bottom: -5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    color: darkgrey;
+    font-size: 16px;
+
+  } 
 
 .btn-default{
     margin-left: 30px;
@@ -37,9 +67,10 @@ input[type=text], select {
     padding-bottom: 10px;
     background-color: #CA8180;
     border: 2px solid;
-    border-radius: 25px;
+    
     border-color: white;
     color: white;
+    width: 100px;
 }
 
 #name{

@@ -35,18 +35,17 @@
         <article class="main_content_box">
             <h3 class = "panel-heading">Portfolio</h3>
         <!--contact form-->
-                <form>
-                    <p class="contact_form_label">Name</p>
-                    <input type="text" name="Name">
+                   <p class="contact_form_label">Name</p>
+                    <input class="contact-name" type="text" name="Name">
                     <br>
-                    <p class="contact_form_label">Email</p>
-                    <input type="text" name="Email">
+                    <p class="contact_form_label">Subject</p>
+                    <input class="subject" type="text" name="Subject">
+                 
                     <br>
-                    <p class="contact_form_label">Message</p>
-                    <textarea name="message" id="message_box" ">Enter your comment here...</textarea>
+                    <p class="contact_form_label">Comment</p>
+                    <input type="text" name="message" class="comment"></textarea>
 	
-                    <button type="button" class="btn btn-default">Default</button>			
-    </form>
+                    <button type="button" id="send-btn" class="btn btn-default">Send</button>			
 		</article> 
 	</article>
 	<!--Siderbar-->
@@ -70,3 +69,37 @@
 	<center><p2> © Copyright 2017 Henrietta Sharpe</p2></center>
 </footer>
 </body>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+
+
+      // email student after clicking "email-btn"
+     
+      $("#send-btn").on("click",  function() {
+
+   // grabbing email info
+      var email = "henrietta_sharpe@yahoo.com";
+      var subject = $(".subject").text();
+      var message = $(".comment").text();
+      var name = "Henrietta";
+
+      console.log(subject);
+        //    var link =
+        //   "mailto:" +
+        //   email +
+        //   "?Subject=" +
+        //   subject+
+         
+        //   "&body=" +
+        //   "Hi " +
+        //   name +
+        //   "," + message;
+
+        // window.location.href = link;
+      });
+
+
+</script>
