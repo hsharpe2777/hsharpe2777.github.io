@@ -705,10 +705,14 @@ img {
     /*message box when the browser's width
   is 768 or less*/
 
+  .jumbotron{
+    width: 105%
+  }
+
   #name{
     font-size: 70px;
   }
-  
+
     #message_box {
         width: 425px;
         height: 200px;
@@ -831,7 +835,13 @@ img {
     /* 
   These rules take effect when the browser's width
   is either 680px or less.
+
+
 */
+.jumbotron{
+    width: 105%
+  }
+
     .contact_form_label {
         font-size: 18px;
         padding-left: 40px;
