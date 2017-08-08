@@ -704,6 +704,11 @@ img {
     }
     /*message box when the browser's width
   is 768 or less*/
+
+  #name{
+    font-size: 70px;
+  }
+  
     #message_box {
         width: 425px;
         height: 200px;
